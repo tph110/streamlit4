@@ -243,7 +243,7 @@ def main():
         with col1:
             st.subheader("📷 Input Image")
             image = Image.open(uploaded_file).convert('RGB')
-            st.image(image, use_container_width=True)
+            st.image(image, use_column_width=True)
             st.caption(f"Image size: {image.size[0]} × {image.size[1]} pixels")
         
         with col2:
